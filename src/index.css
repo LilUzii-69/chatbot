@@ -1,0 +1,360 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "Noto Sans TH";
+  src: url("/public/font/NotoSansThai-VariableFont_wdth,wght.ttf")
+    format("truetype");
+}
+
+body {
+  font-family: "Noto Sans TH" !important;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.navbar-default {
+  background-color: white;
+}
+
+.navbar-default .navbar-brand {
+  padding: 10px 20px;
+}
+
+.navbar-scrolled {
+  transition: 0.5s;
+  background-color: #a9a9a9;
+  color: white;
+}
+.navbar-scrolled .nav-link {
+  color: white !important;
+}
+
+.navbar-scrolled .navbar-brand {
+  transition: 0.5s;
+}
+
+.banner-img {
+  width: 100%;
+  max-width: 100%;
+}
+
+.overflow-y-hidden {
+  overflow-y: hidden;
+}
+
+.font-gray {
+  color: #777171;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  color: #777171 !important;
+}
+
+.nav-link:hover {
+  color: black !important;
+}
+
+.footer-adr {
+  padding-right: 150px !important;
+}
+
+.cover {
+  object-fit: cover;
+}
+
+.head-line-bkk {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 50px;
+  text-decoration-color: #2b3990;
+}
+
+.head-line {
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-underline-offset: 15px;
+  text-decoration-color: #2b3990;
+}
+.thumbnail img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.partner-img {
+  width: 100%;
+  height: 100px;
+  object-fit: contain;
+}
+
+.executive-pic {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  background-image: url("/public/img/backlogo.png");
+  background-position: center; /* Center the background image horizontally and vertically */
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: contain; /* Cover the entire element with the background image */
+}
+
+/* BlogSlider.css */
+
+.blog-slider-container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.slick-slide {
+  padding: 0 10px; /* Add spacing between columns */
+  box-sizing: border-box;
+}
+
+.blog-card {
+  display: flex;
+  background-color: #fff;
+  padding: 20px;
+  margin: 0 10px; /* Adjust the margin to control the gap between columns */
+  border: 1px solid #ddd;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.blog-content {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.title-line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  height: 60px;
+  margin-top: 10px;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.margin-post {
+  margin: 0 150px;
+}
+
+.margin-about {
+  margin: 0 200px;
+}
+
+.margin-about-content {
+  margin: 0 50px;
+}
+
+/* Style the background image */
+.background-image {
+  background-image: url("https://bkkydc-cms.000webhostapp.com/wp-content/uploads/2023/09/videoback.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100%;
+  height: 70vh;
+  position: relative; /* Add relative positioning to the container */
+}
+
+/* Style the circular play button */
+.play-button {
+  width: 200px; /* Set the fixed width */
+  height: 200px; /* Set the fixed height */
+  background-color: transparent !important ;
+  border: 10px solid white !important; /* Border color */
+  border-radius: 50% !important; /* Circle shape */
+  color: #007bff; /* Text color */
+  transition: border-color 0.3s, color 0.3s; /* Hover animation */
+  position: absolute; /* Use absolute positioning */
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Center the button */
+  font-size: 40px;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/* Style the play icon */
+.play-icon {
+  font-size: 100px;
+}
+
+/* Hover effect */
+.play-button:hover {
+  background-color: #007bff; /* Background color on hover */
+  border: 10px solid blue !important; /* Remove border on hover */
+  color: blue !important; /* Text color on hover */
+}
+
+.header-line {
+  border: none; /* Remove the default border */
+  border-top: 3px solid #00a3ff; /* Set the top border to be blue and thicker */
+}
+
+.about-head {
+  color: #00a3ff;
+}
+
+.logo-height {
+  height: 300px;
+}
+
+.logo-about-height {
+  height: 100px;
+}
+
+.Chatbot {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.chat-container {
+  width: 400px;
+  background-color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.messages {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px;
+}
+
+.message {
+  background-color: #e6f7ff;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.input-container {
+  display: flex;
+  margin-top: 10px;
+}
+
+input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+@keyframes loader {
+  0%,
+  10%,
+  100% {
+    width: 80px;
+    height: 80px;
+  }
+  65% {
+    width: 150px;
+    height: 150px;
+  }
+}
+@keyframes loaderBlock {
+  0%,
+  30% {
+    transform: rotate(0);
+  }
+  55% {
+    background-color: blue;
+  }
+  100% {
+    transform: rotate(90deg);
+  }
+}
+@keyframes loaderBlockInverse {
+  0%,
+  20% {
+    transform: rotate(0);
+  }
+  55% {
+    background-color: orange;
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
+
+.preloader {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  height: 80px;
+  transform: translate(-50%, -50%) rotate(45deg) translate3d(0, 0, 0);
+  animation: loader 1.2s infinite ease-in-out;
+
+  span {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: #ee4040;
+    animation: loaderBlock 1.2s infinite ease-in-out both;
+
+    &:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    &:nth-child(2) {
+      top: 0;
+      right: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+    }
+    &:nth-child(3) {
+      bottom: 0;
+      left: 0;
+      animation: loaderBlockInverse 1.2s infinite ease-in-out both;
+    }
+    &:nth-child(4) {
+      bottom: 0;
+      right: 0;
+    }
+  }
+}
