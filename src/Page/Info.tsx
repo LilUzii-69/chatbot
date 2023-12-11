@@ -3,38 +3,32 @@ import React from "react";
 
 const Info: React.FC = () => {
   return (
-    <div className="container">
-      <div className="row">
-        {Array.from({ length: 9 }, (_, i) => (
-          <div key={i} className="col-md-4 mb-3">
-            <div className="card">
-              <div className="card-body">
-                <center>
-                  <img
-                    src="./img/backlogo.png"
-                    alt="news"
-                    style={{ height: 200, width: "auto" }}
-                  />
-                </center>
-                <h5 className="card-title">ข่าวสารที่ {i + 1}</h5>
-                <p className="card-text">รายละเอียดข่าวสารที่ {i + 1}</p>
-                <button
-                  style={{
-                    backgroundColor: "lightblue",
-                    border: 0,
-                    padding: "5px 10px",
-                    color: "white",
-                  }}
-                >
-                  ดูรายละเอียดเพิ่มเติม
-                </button>
+    <div className="container-fluid">
+      <div className="container-fluid">
+        <div className="row">
+          <div className="col-12 p-0 mt-5">
+            <div className="margin-about">
+            
+              <div className="margin-about-content">
+                <p>
+                  Penhuang (เป็นห่วง) มาจาก การเป็นห่วง ที่หมายถึงความรู้สึกดีๆ ที่มอบให้กับคนคนหนึ่ง
+                </p>
+                <p>
+                  โดยผู้สร้างอยากจะส่งต่อความรู้สึกดีๆ ต่อผู้อื่นในรูปแบบของ Chat Bot 
+                </p>
+                <p>
+                ไม่ว่าเมื่อไหร่ หรือ ที่ไหน Penhuang Bot พร้อมจะอยู่เป็นเพื่อนเคียงข้างคุณ
+                </p>
               </div>
+
             </div>
           </div>
-        ))}
+        </div>
+
+        
+
       </div>
     </div>
   );
 };
-
 export default Info;

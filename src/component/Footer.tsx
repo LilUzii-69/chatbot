@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 const Footer: React.FC = () => {
   return (
     <div>
-      <footer className="bg-light py-4">
+      {/* <footer className="bg-light py-4">
         <div className="container">
           <div className="row">
             <div className="col-md-5 footer-adr">
@@ -102,7 +102,8 @@ const Footer: React.FC = () => {
             </div>
           </div>
         </div>
-      </footer>
+      </footer> */}
+      
       <center
         style={{
           backgroundColor: "#2b3990",
@@ -111,7 +112,7 @@ const Footer: React.FC = () => {
         }}
       >
         <p style={{ marginBottom: "0px" }}>
-          &copy; {new Date().getFullYear()} สภาพัฒนาเยาวชนกรุงเทพมหานคร : พยก.
+          &copy; {new Date().getFullYear()} Penhung Chatbot รหัสโครงงาน CP23AT1
         </p>
       </center>
     </div>
