@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const About: React.FC = () => {
   return (
@@ -13,18 +14,19 @@ const About: React.FC = () => {
               </div>
               <div className="margin-about-content">
                 <p>
-                  กำลังอยากคุยกับใครสักคนหรือไม่ เป็นห่วงบอทพร้อมจะเป็นเพื่อนรับฟังคุณเสมอ
+                  กำลังอยากคุยกับใครสักคนหรือไม่
+                  เป็นห่วงบอทพร้อมจะเป็นเพื่อนรับฟังคุณเสมอ
                 </p>
-                <button>แชทเลย!</button>
+                <Link to="/">
+                  <button className="chat-button">แชทเลย!</button>
+                </Link>
                 <div>
                   <hr className="header-line" />
-                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-
-
       </div>
     </div>
   );

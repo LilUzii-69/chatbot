@@ -268,12 +268,21 @@ input {
 }
 
 button {
-  background-color: #007bff;
-  color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
   padding: 10px;
   cursor: pointer;
+}
+
+.chat-button {
+  background-color: #21c4ff !important;
+  color: white;
+}
+
+.chat-button:hover {
+  background-color: #c7c9c9 !important;
+  color: Black;
+  transition: 0.3s;
 }
 
 @keyframes loader {
