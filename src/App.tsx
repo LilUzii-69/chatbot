@@ -13,14 +13,16 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/Info" element={<Info />} />
-        <Route path="/blog/:postId" element={<Blog />} />
-        <Route path="/" element={<Chatbot />} />
-      </Routes>
+      <div style={{ minHeight: "100vh" }}>
+        <Routes>
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/Info" element={<Info />} />
+          <Route path="/blog/:postId" element={<Blog />} />
+          <Route path="/" element={<Chatbot />} />
+        </Routes>
+      </div>
       <Footer />
     </Router>
   );
