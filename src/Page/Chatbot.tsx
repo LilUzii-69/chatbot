@@ -4,19 +4,29 @@ const Chatbot: React.FC = () => {
   const [messages, setMessages] = useState<string[]>([]);
   const [newMessage, setNewMessage] = useState<string>("");
 
+  useEffect(() => {
+    // Initial greeting from the bot
+    const initialGreeting = "Hello! I am Penhuang.";
+
+    // Simulate the bot sending a greeting message
+    setMessages([initialGreeting]);
+  }, []);
+
   const handleSendMessage = () => {
     if (newMessage.trim() !== "") {
-      setMessages([...messages, newMessage]);
+      // User's message
+      const userMessage = newMessage;
+
+      // Simulate bot's response to the user's message
+      const botResponse = "I received your message.";
+
+      // Update the chat with both user's message and bot's response
+      setMessages([...messages, userMessage, botResponse]);
+
+      // Clear the input field
       setNewMessage("");
     }
   };
-
-  useEffect(() => {
-    // You can replace this with actual server-side communication.
-    // For simplicity, we're using a setTimeout to simulate receiving messages.
-    const fakeIncomingMessage = "สวัสดีจ้าน้องเป็นห่วงจ้า.";
-    setTimeout(() => setMessages([...messages, fakeIncomingMessage]), 500000);
-  }, [messages]);
 
   return (
     <div className="Chatbot">
@@ -35,7 +45,9 @@ const Chatbot: React.FC = () => {
             value={newMessage}
             onChange={(e) => setNewMessage(e.target.value)}
           />
-          <button onClick={handleSendMessage}>Send</button>
+          <button className="chat-button" onClick={handleSendMessage}>
+            Send
+          </button>
         </div>
       </div>
     </div>
