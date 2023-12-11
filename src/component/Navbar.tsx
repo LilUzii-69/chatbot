@@ -27,17 +27,16 @@ const Navbar: React.FC = () => {
       } sticky-top`}
     >
       <div className="container">
-
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
-              <Link to="/" className="nav-link">
-              Penhung
+              <Link to="/about" className="nav-link">
+                Home
               </Link>
             </li>
             <li className="nav-item">
-              <Link to="/about" className="nav-link">
-              Home
+              <Link to="/" className="nav-link">
+                Penhung Chatbot
               </Link>
             </li>
             <li className="nav-item">
@@ -47,7 +46,6 @@ const Navbar: React.FC = () => {
             </li>
           </ul>
         </div>
-
       </div>
     </nav>
   );

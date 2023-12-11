@@ -14,8 +14,8 @@ const Chatbot: React.FC = () => {
   useEffect(() => {
     // You can replace this with actual server-side communication.
     // For simplicity, we're using a setTimeout to simulate receiving messages.
-    const fakeIncomingMessage = "This is a fake incoming message.";
-    setTimeout(() => setMessages([...messages, fakeIncomingMessage]), 5000000);
+    const fakeIncomingMessage = "สวัสดีจ้าน้องเป็นห่วงจ้า.";
+    setTimeout(() => setMessages([...messages, fakeIncomingMessage]), 500000);
   }, [messages]);
 
   return (
